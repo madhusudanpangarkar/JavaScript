@@ -17,3 +17,14 @@ console.log(JsUser);
 // console.log(JsUser["email"]);
 console.log(JsUser[mySym]);            //printing symbol
 
+
+JsUser.greetings = function() {
+    console.log("Hello JS user")
+}
+
+JsUser.greetings2 = function() {
+    console.log(`Hello JS user ${this.name}`);
+}
+
+console.log(JsUser.greetings());
+console.log(JsUser.greetings2());
